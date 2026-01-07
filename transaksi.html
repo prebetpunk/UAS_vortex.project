@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validasi.js"></script>
+</head>
+<body>
+
+<header>
+  <img src="asset\logo1.png" >
+  <h1>vortex.project</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Transaksi</h2>
+
+  <form onsubmit="return validasiForm()">
+    <label>Nama Transaksi</label>
+    <input type="text" id="nama">
+
+    <label>Jumlah</label>
+    <input type="number" id="jumlah">
+
+    <label>Kategori</label>
+    <select id="kategori">
+      <option value="">-- Pilih --</option>
+      <option>Pakaian</option>
+      <option>Makanan</option>
+      <option>Elektronik</option>
+      <option>Peralatan Rumah</option>
+    </select>
+
+    <button type="submit">Simpan</button>
+  </form>
+
+  <h3>Daftar Transaksi</h3>
+  <table>
+    <tr>
+      <th>Nama Transaksi</th>
+      <th>Jumlah</th>
+      <th>Kategori</th>
+    </tr>
+    <tr>
+      <td>jaket bulu</td>
+      <td>1</td>
+      <td>Pakaian</td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+  © 2026 Aplikasi Penjualan Barang
+</footer>
+
+</body>
+</html>
